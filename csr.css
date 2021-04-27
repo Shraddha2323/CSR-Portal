@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #a64bf4;
+  background: -webkit-linear-gradient(30deg, #113448, #14bf98);
+  background: -o-linear-gradient(45deg, #113448, #14bf98);
+  background: -moz-linear-gradient(45deg,  #113448,#14bf98);
+  background: linear-gradient(45deg,  #113448,#14bf98);
+}
+#container {
+  height: 100%;
+  width: 70%;
+  box-shadow: 5px 5px black;
+  text-align: center;
+  background-color: white;
+  margin: 70px auto;
+  border-radius: 15px;
+  transition: all 0.7s ease-in-out;
+}
+#container:hover {
+  transform: scale(1.1);
+}
+#details {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: monospace;
+  color:#235876;
+}
+#company_details,
+#financial_details,
+#registered_address,
+#registration_details,
+#terms {
+  display: inline-block;
+  line-height: 2.5;
+}
+input[type="text"],
+input[type="password"],
+label {
+  height: 15px;
+  width: 165px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 15px;
+  font-size: 14px;
+  color: #0c2533;
+  border-color: white;
+  font-weight: 700;
+}
+
+button {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin: 10px;
+  background-color:#113448;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgb(54 255 177 / 90%);
+}
+button:hover {
+  background: #fff;
+  box-shadow: 0px 2px 5px 5px rgb(54 255 177 / 90%));
+  color: #000;
+}
+
+button:after {
+  content: "";
+  background: rgb(179, 68, 108);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+button:focus {
+  outline: 0;
+}
